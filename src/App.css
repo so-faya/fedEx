@@ -1,38 +1,406 @@
-.App {
-  text-align: center;
+body{
+    border: 1px solid red;
+    margin: 0;
+    padding: 0;
+}
+.navbar-container{
+    display: flex;
+    justify-content: center;
+    background-color: #4d148c;
+    height: 80px;
+}
+.navbar-holder{
+    display: flex;
+    flex-basis: 80%;
+}
+.logo-holder{
+    display: flex;
+    align-items: center;
+    flex-basis: 12%;
+}
+.logo-holder>img{
+    height: 25px;
+    width:80px;
+}
+.link-holder{
+    display: flex;
+    align-items: center;
+    flex-basis: 65%;
+}
+.link-holder>ul{
+    display: flex;
+    flex-basis: 100%;
+    list-style: none;
+}
+.link-holder>ul>li{
+    color: white;
+    margin-left: 15px;
+}
+.icon-links{
+    display: flex;
+    flex-basis: 23%;
+}
+.icon-holder{
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: white;
+
+}
+.icon-holder>a{
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* hero section */
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid green;
+    background-image: url(Image/Hero\ 1.jpg);
+    background-size: 120%;
+    background-position: -150px 0px;
+    height: 77vh;
+}
+.hero-container>h1{
+    color: white;
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+.operations{
+    display: flex;
+    align-items: center;
+}
+.operations>a{
+    text-decoration: none;
+}
+.operations>a>.box{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 150px; 
+    background-color: white;
+    color: black;
+    padding: 12px;
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+}
+.operations>a>.box>img{
+    height: 50px;
+    width: 50px;
+}
+.operations>a>.ship>img{
+    margin-bottom: -10px;
+    height: 60px;
+    width: 60px;
+}
+.operations>a>.track{
+    background-color: #4d148c;
+    height: 150px;
+    color: white;
+}
+.operations>a>.track>img{
+    height: 90px;
+    width: 90px;
+    margin-bottom: -20px;
+    color: white;
+}
+.operations>a>.box:active{
+    background-color: #4d148c;
+    height: 150px;
+}
+.track-holder{
+    width: 48%;
+    margin-top: 50px;
+}
+.track-holder>input{
+    padding: 23px 10px;
+}
+.track-holder>input:first-child{
+    width: 70%;
+    margin-right: 10px;
+    border: none;
+}
+.track-holder>input:first-child:active{
+    border-left: 1px solid #4d148c;
+}
+.track-holder>input:last-child{
+    width: 23%;
+    background-color: #ff6200;
+    color: white;
+    font-weight: bolder;
+    border: none;
+}
+.fao{
+    width: 48%;
+    margin-top: 30px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 20px;
+}
+.fao>a{
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+.fao>a:hover{
+    border-bottom: 1px solid white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* management section */
+.manage-container{
+    display: flex;
+    justify-content: center;
+}
+.manage-holder{
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+}
+.manage-holder>h2{
+    align-self: center;
+    font-size: 40px;
+    font-weight: lighter;
+    color: rgb(65, 64, 64);
+}
+.manage-icons{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.manage-icons>.iconny{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 15%;
+    justify-content: flex-end;
+    text-align: center;
+}
+.iconny>a>img{
+    height: 80px;
+    width: 80px;
+}
+.iconny>a:last-child{
+    text-decoration: none;
+    color: rgb(2, 107, 148);
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 15px;
+}
+.schedule{
+    margin-top: 80px;
+    background-color: rgb(245, 245, 248);
+    display: flex;
+    flex-shrink: 1;
+    flex-grow: 0;
+
+}
+.clock-icon{
+    display: flex;
+    flex-basis: 30%;
+    align-items: center;
+}
+.clock-icon>img{
+    height: 100px;
+    width: 100px;
+}
+.schedule-info{
+    flex-basis: 70%;
+    padding-bottom: 30px;
+}
+.schedule-info-hd{
+    font-size: 30px;
+    font-weight: lighter;
+    color: rgb(27, 27, 27);
+}
+.schedule-info-p{
+    font-size: 20px;
+    font-weight: light;
+    padding-bottom: 10px;
+}
+.schedule-info>a, .momentun-info-holder>a, .fraud-info>a,.co2-icon-info>a{
+    text-decoration: none;
+    color: rgb(2, 107, 148);
+    font-weight: bold;
+    font-size: 16px;
+}
+.schedule-info>a:hover, .momentun-info-holder>a:hover, .fraud-info>a:hover,.co2-icon-info>a:hover{
+    border-bottom: 1px solid rgb(2, 107, 148);
+    color: rgb(2, 88, 122);
+}
+.ready{
+    display: flex;
+    margin-top: 60px;
+}
+.ready-to-help{
+    margin-top: 50px;
+}
+.ready-to-help-hd{
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.rowone-img-holder,.rowtwo-img-holder,.rowthree-img-holder,.rowfour-img-holder{
+    flex-basis: 50%;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+.rowone-img-holder>img,.rowtwo-img-holder>img,.rowthree-img-holder>img,.rowfour-img-holder>img{
+    height: 350px ;
+    width: 470px;
+}
+.rowone-info,.rowtwo-info,.rowthree-info,.rowfour-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.rowone-hd,.rowtwo-hd,.rowthree-hd,.rowfour-hd{
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(37, 37, 37);
+}
+.rowone-p,.rowtwo-p,.rowthree-p,.rowfour-p{
+    font-size: 20px;
+}
+.rowone-p>a,.rowtwo-p>a,.rowthree-p>a,.rowfour-p>a,.momentun-info-p>a,.money-back-p>a{
+    color: black;
+}
+.rowone-p>a:hover,.rowtwo-p>a:hover,.rowthree-p>a:hover,.rowfour-p>a:hover,.momentun-info-p>a:hover,.money-back-p>a:hover{
+    color: rgb(3, 85, 117);
+}
+.assistance{
+    border: 2px solid rgb(2, 107, 148);
+    border-radius: 35px;
+    align-self: flex-start;
+    padding: 20px 25px;
+    text-decoration: none;
+    color: rgb(2, 107, 148);
+    font-weight: bold;
+}
+.assistance:hover{
+    padding: 21px 26px;
+    color: rgb(3, 85, 117);
+    border: 2px solid rgb(2, 107, 148);
+}
+.package-container{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.package-one,.package-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 48%;
+}
+.package-icon>img{
+    height: 130px;
+    width: 130px;
+}
+.package-hd{
+    width: 55%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: lighter;
+    color: rgb(26, 25, 25);
+}
+.package-p{
+    margin-top: -15px;
+    font-size: 20px;
+    text-align: center;
+}
+.package-link{
+    padding: 21px 0px;
 }
 
-.App-link {
-  color: #61dafb;
+/* momentun section */
+.momentun-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
 }
+.momentun-holder{
+    flex-basis: 80%;
+}
+.momentun-hd,.datetoremember-hd{
+    text-align: center;
+    font-size: 35px;
+    font-weight: lighter;
+    color: rgb(36, 35, 35);
+}
+.momentunrow{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.momentun-img-container{
+    flex-basis: 30%;
+    
+}
+.momentun-img-container>img{
+    height: 200px;
+    width: 320px;
+}
+.momentun-info-holder{
+    flex-basis: 65%;
+}
+.momentun-info-hd,.co2-icon-hd,.fraud-info-hd{
+    font-size: 25px;
+    font-weight: light;
+    color: rgb(34, 34, 34);
+}
+.momentun-info-p,.co2-icon-p,.fraud-info-p,.money-back-p{
+    font-size: 20px;
+    font-weight: lighter;
+}
+.co2-icon-row{
+    background-color: rgb(245, 245, 248);
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0px;
+    padding-bottom: 25px;
+}
+.co2-icon-holder{
+    display: flex;
+    flex-basis: 20%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.co2-icon-holder>img,.fraud-icon>img{
+    height: 100px;
+    width: 100px;
+}
+.co2-icon-info{
+    flex-basis: 75%;
+}
+.co2-icon-p,.fraud-info-p{
+    margin-bottom: 20px ;
+}
+.fraud-warning{
+    display: flex;
+    padding-bottom: 20px;
+    justify-content:space-between;
+    margin: 60px 0px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.fraud-icon{
+    display: flex;
+    flex-basis: 20%;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+.fraud-info{
+    flex-basis: 80%;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+.money-back-guarantee{
+    border: 1px solid red;
 }
